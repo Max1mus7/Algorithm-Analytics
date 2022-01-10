@@ -1,0 +1,488 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Everything\\CodingForFun\\AlgorithmSite\\APISorting\\SortAnalytics\\SortAnalytics.csproj": {}
+  },
+  "projects": {
+    "D:\\Everything\\CodingForFun\\AlgorithmSite\\APISorting\\BubbleSort\\BubbleSort.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Everything\\CodingForFun\\AlgorithmSite\\APISorting\\BubbleSort\\BubbleSort.csproj",
+        "projectName": "BubbleSort",
+        "projectPath": "D:\\Everything\\CodingForFun\\AlgorithmSite\\APISorting\\BubbleSort\\BubbleSort.csproj",
+        "packagesPath": "C:\\Users\\poker\\.nuget\\packages\\",
+        "outputPath": "D:\\Everything\\CodingForFun\\AlgorithmSite\\APISorting\\BubbleSort\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\poker\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\Everything\\CodingForFun\\AlgorithmSite\\APISorting\\RandomNumAPI\\RandomNumAPI.csproj": {
+                "projectPath": "D:\\Everything\\CodingForFun\\AlgorithmSite\\APISorting\\RandomNumAPI\\RandomNumAPI.csproj"
+              },
+              "D:\\Everything\\CodingForFun\\AlgorithmSite\\APISorting\\RandomWordAPI\\RandomWordAPI.csproj": {
+                "projectPath": "D:\\Everything\\CodingForFun\\AlgorithmSite\\APISorting\\RandomWordAPI\\RandomWordAPI.csproj"
+              },
+              "D:\\Everything\\CodingForFun\\AlgorithmSite\\APISorting\\SortInterface\\SortInterface.csproj": {
+                "projectPath": "D:\\Everything\\CodingForFun\\AlgorithmSite\\APISorting\\SortInterface\\SortInterface.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Everything\\CodingForFun\\AlgorithmSite\\APISorting\\InsertionSort\\InsertionSort.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Everything\\CodingForFun\\AlgorithmSite\\APISorting\\InsertionSort\\InsertionSort.csproj",
+        "projectName": "InsertionSort",
+        "projectPath": "D:\\Everything\\CodingForFun\\AlgorithmSite\\APISorting\\InsertionSort\\InsertionSort.csproj",
+        "packagesPath": "C:\\Users\\poker\\.nuget\\packages\\",
+        "outputPath": "D:\\Everything\\CodingForFun\\AlgorithmSite\\APISorting\\InsertionSort\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\poker\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\Everything\\CodingForFun\\AlgorithmSite\\APISorting\\RandomNumAPI\\RandomNumAPI.csproj": {
+                "projectPath": "D:\\Everything\\CodingForFun\\AlgorithmSite\\APISorting\\RandomNumAPI\\RandomNumAPI.csproj"
+              },
+              "D:\\Everything\\CodingForFun\\AlgorithmSite\\APISorting\\RandomWordAPI\\RandomWordAPI.csproj": {
+                "projectPath": "D:\\Everything\\CodingForFun\\AlgorithmSite\\APISorting\\RandomWordAPI\\RandomWordAPI.csproj"
+              },
+              "D:\\Everything\\CodingForFun\\AlgorithmSite\\APISorting\\SortInterface\\SortInterface.csproj": {
+                "projectPath": "D:\\Everything\\CodingForFun\\AlgorithmSite\\APISorting\\SortInterface\\SortInterface.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Everything\\CodingForFun\\AlgorithmSite\\APISorting\\RandomNumAPI\\RandomNumAPI.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Everything\\CodingForFun\\AlgorithmSite\\APISorting\\RandomNumAPI\\RandomNumAPI.csproj",
+        "projectName": "RandomNumAPI",
+        "projectPath": "D:\\Everything\\CodingForFun\\AlgorithmSite\\APISorting\\RandomNumAPI\\RandomNumAPI.csproj",
+        "packagesPath": "C:\\Users\\poker\\.nuget\\packages\\",
+        "outputPath": "D:\\Everything\\CodingForFun\\AlgorithmSite\\APISorting\\RandomNumAPI\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\poker\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Everything\\CodingForFun\\AlgorithmSite\\APISorting\\RandomWordAPI\\RandomWordAPI.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Everything\\CodingForFun\\AlgorithmSite\\APISorting\\RandomWordAPI\\RandomWordAPI.csproj",
+        "projectName": "RandomWordAPI",
+        "projectPath": "D:\\Everything\\CodingForFun\\AlgorithmSite\\APISorting\\RandomWordAPI\\RandomWordAPI.csproj",
+        "packagesPath": "C:\\Users\\poker\\.nuget\\packages\\",
+        "outputPath": "D:\\Everything\\CodingForFun\\AlgorithmSite\\APISorting\\RandomWordAPI\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\poker\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Everything\\CodingForFun\\AlgorithmSite\\APISorting\\SelectionSort\\SelectionSort.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Everything\\CodingForFun\\AlgorithmSite\\APISorting\\SelectionSort\\SelectionSort.csproj",
+        "projectName": "SelectionSort",
+        "projectPath": "D:\\Everything\\CodingForFun\\AlgorithmSite\\APISorting\\SelectionSort\\SelectionSort.csproj",
+        "packagesPath": "C:\\Users\\poker\\.nuget\\packages\\",
+        "outputPath": "D:\\Everything\\CodingForFun\\AlgorithmSite\\APISorting\\SelectionSort\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\poker\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\Everything\\CodingForFun\\AlgorithmSite\\APISorting\\RandomNumAPI\\RandomNumAPI.csproj": {
+                "projectPath": "D:\\Everything\\CodingForFun\\AlgorithmSite\\APISorting\\RandomNumAPI\\RandomNumAPI.csproj"
+              },
+              "D:\\Everything\\CodingForFun\\AlgorithmSite\\APISorting\\RandomWordAPI\\RandomWordAPI.csproj": {
+                "projectPath": "D:\\Everything\\CodingForFun\\AlgorithmSite\\APISorting\\RandomWordAPI\\RandomWordAPI.csproj"
+              },
+              "D:\\Everything\\CodingForFun\\AlgorithmSite\\APISorting\\SortInterface\\SortInterface.csproj": {
+                "projectPath": "D:\\Everything\\CodingForFun\\AlgorithmSite\\APISorting\\SortInterface\\SortInterface.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Everything\\CodingForFun\\AlgorithmSite\\APISorting\\SortAnalytics\\SortAnalytics.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Everything\\CodingForFun\\AlgorithmSite\\APISorting\\SortAnalytics\\SortAnalytics.csproj",
+        "projectName": "SortAnalytics",
+        "projectPath": "D:\\Everything\\CodingForFun\\AlgorithmSite\\APISorting\\SortAnalytics\\SortAnalytics.csproj",
+        "packagesPath": "C:\\Users\\poker\\.nuget\\packages\\",
+        "outputPath": "D:\\Everything\\CodingForFun\\AlgorithmSite\\APISorting\\SortAnalytics\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\poker\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\Everything\\CodingForFun\\AlgorithmSite\\APISorting\\BubbleSort\\BubbleSort.csproj": {
+                "projectPath": "D:\\Everything\\CodingForFun\\AlgorithmSite\\APISorting\\BubbleSort\\BubbleSort.csproj"
+              },
+              "D:\\Everything\\CodingForFun\\AlgorithmSite\\APISorting\\InsertionSort\\InsertionSort.csproj": {
+                "projectPath": "D:\\Everything\\CodingForFun\\AlgorithmSite\\APISorting\\InsertionSort\\InsertionSort.csproj"
+              },
+              "D:\\Everything\\CodingForFun\\AlgorithmSite\\APISorting\\RandomNumAPI\\RandomNumAPI.csproj": {
+                "projectPath": "D:\\Everything\\CodingForFun\\AlgorithmSite\\APISorting\\RandomNumAPI\\RandomNumAPI.csproj"
+              },
+              "D:\\Everything\\CodingForFun\\AlgorithmSite\\APISorting\\RandomWordAPI\\RandomWordAPI.csproj": {
+                "projectPath": "D:\\Everything\\CodingForFun\\AlgorithmSite\\APISorting\\RandomWordAPI\\RandomWordAPI.csproj"
+              },
+              "D:\\Everything\\CodingForFun\\AlgorithmSite\\APISorting\\SelectionSort\\SelectionSort.csproj": {
+                "projectPath": "D:\\Everything\\CodingForFun\\AlgorithmSite\\APISorting\\SelectionSort\\SelectionSort.csproj"
+              },
+              "D:\\Everything\\CodingForFun\\AlgorithmSite\\APISorting\\SortInterface\\SortInterface.csproj": {
+                "projectPath": "D:\\Everything\\CodingForFun\\AlgorithmSite\\APISorting\\SortInterface\\SortInterface.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Everything\\CodingForFun\\AlgorithmSite\\APISorting\\SortInterface\\SortInterface.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Everything\\CodingForFun\\AlgorithmSite\\APISorting\\SortInterface\\SortInterface.csproj",
+        "projectName": "SortInterface",
+        "projectPath": "D:\\Everything\\CodingForFun\\AlgorithmSite\\APISorting\\SortInterface\\SortInterface.csproj",
+        "packagesPath": "C:\\Users\\poker\\.nuget\\packages\\",
+        "outputPath": "D:\\Everything\\CodingForFun\\AlgorithmSite\\APISorting\\SortInterface\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\poker\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\Everything\\CodingForFun\\AlgorithmSite\\APISorting\\RandomNumAPI\\RandomNumAPI.csproj": {
+                "projectPath": "D:\\Everything\\CodingForFun\\AlgorithmSite\\APISorting\\RandomNumAPI\\RandomNumAPI.csproj"
+              },
+              "D:\\Everything\\CodingForFun\\AlgorithmSite\\APISorting\\RandomWordAPI\\RandomWordAPI.csproj": {
+                "projectPath": "D:\\Everything\\CodingForFun\\AlgorithmSite\\APISorting\\RandomWordAPI\\RandomWordAPI.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

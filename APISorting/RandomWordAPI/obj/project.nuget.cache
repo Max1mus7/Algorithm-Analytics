@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "6Ean9KFjW9rYXLxk5bvyJfH0WV8QpxvxTOZsW4POsMmfNbhmTDALNFs6y6wdLbiwvtB6PzCF1VPw9u810ZrX8Q==",
+  "success": true,
+  "projectFilePath": "D:\\Everything\\CodingForFun\\AlgorithmSite\\APISorting\\RandomWordAPI\\RandomWordAPI.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\poker\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}
