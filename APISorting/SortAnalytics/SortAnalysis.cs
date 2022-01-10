@@ -3,13 +3,13 @@
 // 1/7/2022
 // This is my own work.
 using SelectionSort;
-using InsertionSort;
-using BubbleSort;
-using RandomNumAPI;
-using RandomWordAPI;
+using AlgorithmSite.APISorting.InsertionSort;
+using AlgorithmSite.APISorting.BubbleSort;
+using AlgorithmSite.APISorting.RandomNumAPI;
+using AlgorithmSite.APISorting.RandomWordAPI;
 using Newtonsoft.Json;
-using SortInterface;
-namespace SortAnalytics
+using AlgorithmSite.APISorting.SortInterface;
+namespace AlgorithmSite.APISorting.SortAnalytics
 {
     //This class performs analysis on various sorting algorithms
     //Currently, only default sorts are available

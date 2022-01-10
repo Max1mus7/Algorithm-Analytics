@@ -1,5 +1,5 @@
 ﻿using Newtonsoft.Json;
-namespace SortAnalytics
+namespace AlgorithmSite.APISorting.SortAnalytics
 {
 // Max Weber
 // API Analytics

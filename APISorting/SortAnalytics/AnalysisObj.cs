@@ -2,7 +2,7 @@
 // API Analytics
 // 1/7/2022
 // This is my own work.
-namespace SortAnalytics
+namespace AlgorithmSite.APISorting.SortAnalytics
 {
     //A class used to hold analysis information based on the efficiency of different sorting algorithms.
     public class AnalysisObj

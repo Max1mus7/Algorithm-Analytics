@@ -2,10 +2,10 @@
 // API Analytics
 // 1/7/2022
 // I used source code from the following websites to complete this assignment: www.geeksforgeeks.com/insertion-sort
-using SortInterface;
-using RandomNumAPI;
-using RandomWordAPI;
-namespace InsertionSort
+using AlgorithmSite.APISorting.SortInterface;
+using AlgorithmSite.APISorting.RandomNumAPI;
+using AlgorithmSite.APISorting.RandomWordAPI;
+namespace AlgorithmSite.APISorting.InsertionSort
 {
     //This typed class includes methods from the ISorter interface
     //This class will sort a list of a given type T using an Insertion Sort

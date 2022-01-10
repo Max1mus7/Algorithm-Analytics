@@ -5,7 +5,7 @@
 using System.Net.Http.Headers;
 using Newtonsoft.Json;
 
-namespace RandomWordAPI
+namespace AlgorithmSite.APISorting.RandomWordAPI
 {
     public class RandomWordList
     {

@@ -5,7 +5,7 @@
 using System.Net.Http.Headers;
 using Newtonsoft.Json;
 
-namespace RandomNumAPI
+namespace AlgorithmSite.APISorting.RandomNumAPI
 {
     //A class used to generate a list of random numbers from an API
     public class RandomNumList 

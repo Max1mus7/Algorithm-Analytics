@@ -2,9 +2,9 @@
 // API Analytics
 // 1/7/2022
 // This is my own work.
-using RandomNumAPI;
-using RandomWordAPI;
-namespace SortInterface
+using AlgorithmSite.APISorting.RandomNumAPI;
+using AlgorithmSite.APISorting.RandomWordAPI;
+namespace AlgorithmSite.APISorting.SortInterface
 {
     //An interface used to enforce polymorphism as well as enforce code standards for sorting classes
     public interface ISorter<T>

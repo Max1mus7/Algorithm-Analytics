@@ -2,7 +2,7 @@
 // API Analytics
 // 1/7/2022
 // This is my own work.
-namespace RandomNumAPI
+namespace AlgorithmSite.APISorting.RandomNumAPI
 {
     //Tests the acquisition of random numbers from the API in the RandomNumList() class
     public class ListTest
