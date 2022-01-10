@@ -2,9 +2,9 @@
 // API Analytics
 // 1/7/2022
 // This is my own work.
-using SortInterface;
-using RandomNumAPI;
-using RandomWordAPI;
+using AlgorithmSite.APISorting.SortInterface;
+using AlgorithmSite.APISorting.RandomNumAPI;
+using AlgorithmSite.APISorting.RandomWordAPI;
 namespace SelectionSort
 {
     //This class can be used to sort a list of type T using a selection sort and get a number that indicates the sort's efficiency.

@@ -2,10 +2,11 @@
 // API Analytics
 // 1/7/2022
 // I used source code from the following websites to complete this assignment: www.geeksforgeeks.com/bubble-sort
-using SortInterface;
-using RandomNumAPI;
-using RandomWordAPI;
-namespace BubbleSort
+using AlgorithmSite.APISorting.SortInterface;
+using AlgorithmSite.APISorting.RandomNumAPI;
+using AlgorithmSite.APISorting.RandomWordAPI;
+
+namespace AlgorithmSite.APISorting.BubbleSort
 {
     //This typed class contains methods from the ISorter interface.
     //This class will perform a bubble sort on either input data or random data from an API
