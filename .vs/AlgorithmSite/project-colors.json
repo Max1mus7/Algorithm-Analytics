@@ -15,7 +15,37 @@
       "ProjectGuid": "3f70a100-e366-4e02-9561-6a795c5aa8b8",
       "DisplayName": "BubbleSort",
       "ColorIndex": 2
+    },
+    "8881084b-8f7e-4816-8c59-9c9a37b80918": {
+      "ProjectGuid": "8881084b-8f7e-4816-8c59-9c9a37b80918",
+      "DisplayName": "InsertionSort",
+      "ColorIndex": 3
+    },
+    "145f92bd-9abb-4cdf-b534-9d49fc96ffe7": {
+      "ProjectGuid": "145f92bd-9abb-4cdf-b534-9d49fc96ffe7",
+      "DisplayName": "RandomNumAPI",
+      "ColorIndex": 4
+    },
+    "621a154d-8511-4fc8-a9af-f72bd9d2a5f3": {
+      "ProjectGuid": "621a154d-8511-4fc8-a9af-f72bd9d2a5f3",
+      "DisplayName": "RandomWordAPI",
+      "ColorIndex": 5
+    },
+    "9d305a85-4be3-41e7-9196-c929e0153e4d": {
+      "ProjectGuid": "9d305a85-4be3-41e7-9196-c929e0153e4d",
+      "DisplayName": "SelectionSort",
+      "ColorIndex": 6
+    },
+    "3ace8e1c-9bb9-464e-8560-11be89b9d427": {
+      "ProjectGuid": "3ace8e1c-9bb9-464e-8560-11be89b9d427",
+      "DisplayName": "SortAnalytics",
+      "ColorIndex": 7
+    },
+    "d69d4de7-1a6d-4acd-8df1-c23ddf259756": {
+      "ProjectGuid": "d69d4de7-1a6d-4acd-8df1-c23ddf259756",
+      "DisplayName": "SortInterface",
+      "ColorIndex": 8
     }
   },
-  "NextColorIndex": 3
+  "NextColorIndex": 9
 }
