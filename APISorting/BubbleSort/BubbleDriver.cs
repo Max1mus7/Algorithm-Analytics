@@ -9,7 +9,7 @@ namespace AlgorithmSite.APISorting.BubbleSort
     {
         public static void Main(string[] args)
         {
-
+            Console.WriteLine();
         }
     }
 }
