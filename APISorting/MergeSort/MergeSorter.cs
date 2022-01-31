@@ -1,4 +1,9 @@
-﻿using AlgorithmSite.APISorting.SortInterface;
+﻿// Max Weber
+// API Analytics
+// 1/31/2022
+// This is my own work.
+
+using AlgorithmSite.APISorting.SortInterface;
 using AlgorithmSite.APISorting.RandomNumAPI;
 using AlgorithmSite.APISorting.RandomWordAPI;
 

@@ -1,4 +1,9 @@
-﻿using AlgorithmSite.APISorting.RandomNumAPI;
+﻿// Max Weber
+// API Analytics
+// 1/31/2022
+// This is my own work.
+
+using AlgorithmSite.APISorting.RandomNumAPI;
 using AlgorithmSite.APISorting.RandomWordAPI;
 using AlgorithmSite.APISorting.SortInterface;
 
@@ -6,6 +11,7 @@ namespace Quicksort
 {
     public class QuickSorter<T> : ISorter<T>
     {
+        public static int Iterations { get; set; }
         public List<T> Sort(List<T> list)
         {
             try
