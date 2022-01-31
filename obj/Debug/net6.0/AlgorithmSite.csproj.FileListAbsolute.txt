@@ -88,3 +88,17 @@ D:\Everything\CodingForFun\AlgorithmSite\bin\Debug\net6.0\APISorting\SortInterfa
 D:\Everything\CodingForFun\AlgorithmSite\bin\Debug\net6.0\APISorting\SortInterface\bin\Release\net6.0\RandomWordAPI.runtimeconfig.json
 D:\Everything\CodingForFun\AlgorithmSite\bin\Debug\net6.0\APISorting\SortInterface\bin\Release\net6.0\SortInterface.deps.json
 D:\Everything\CodingForFun\AlgorithmSite\bin\Debug\net6.0\APISorting\SortInterface\bin\Release\net6.0\SortInterface.runtimeconfig.json
+D:\Everything\CodingForFun\AlgorithmSite\bin\Debug\net6.0\APISorting\SortAnalytics\scriptcs_bin\Release\net6.0\BubbleSort.deps.json
+D:\Everything\CodingForFun\AlgorithmSite\bin\Debug\net6.0\APISorting\SortAnalytics\scriptcs_bin\Release\net6.0\BubbleSort.runtimeconfig.json
+D:\Everything\CodingForFun\AlgorithmSite\bin\Debug\net6.0\APISorting\SortAnalytics\scriptcs_bin\Release\net6.0\InsertionSort.deps.json
+D:\Everything\CodingForFun\AlgorithmSite\bin\Debug\net6.0\APISorting\SortAnalytics\scriptcs_bin\Release\net6.0\InsertionSort.runtimeconfig.json
+D:\Everything\CodingForFun\AlgorithmSite\bin\Debug\net6.0\APISorting\SortAnalytics\scriptcs_bin\Release\net6.0\RandomNumAPI.deps.json
+D:\Everything\CodingForFun\AlgorithmSite\bin\Debug\net6.0\APISorting\SortAnalytics\scriptcs_bin\Release\net6.0\RandomNumAPI.runtimeconfig.json
+D:\Everything\CodingForFun\AlgorithmSite\bin\Debug\net6.0\APISorting\SortAnalytics\scriptcs_bin\Release\net6.0\RandomWordAPI.deps.json
+D:\Everything\CodingForFun\AlgorithmSite\bin\Debug\net6.0\APISorting\SortAnalytics\scriptcs_bin\Release\net6.0\RandomWordAPI.runtimeconfig.json
+D:\Everything\CodingForFun\AlgorithmSite\bin\Debug\net6.0\APISorting\SortAnalytics\scriptcs_bin\Release\net6.0\SelectionSort.deps.json
+D:\Everything\CodingForFun\AlgorithmSite\bin\Debug\net6.0\APISorting\SortAnalytics\scriptcs_bin\Release\net6.0\SelectionSort.runtimeconfig.json
+D:\Everything\CodingForFun\AlgorithmSite\bin\Debug\net6.0\APISorting\SortAnalytics\scriptcs_bin\Release\net6.0\SortAnalytics.deps.json
+D:\Everything\CodingForFun\AlgorithmSite\bin\Debug\net6.0\APISorting\SortAnalytics\scriptcs_bin\Release\net6.0\SortAnalytics.runtimeconfig.json
+D:\Everything\CodingForFun\AlgorithmSite\bin\Debug\net6.0\APISorting\SortAnalytics\scriptcs_bin\Release\net6.0\SortInterface.deps.json
+D:\Everything\CodingForFun\AlgorithmSite\bin\Debug\net6.0\APISorting\SortAnalytics\scriptcs_bin\Release\net6.0\SortInterface.runtimeconfig.json

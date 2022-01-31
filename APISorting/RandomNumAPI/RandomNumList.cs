@@ -29,7 +29,7 @@ namespace AlgorithmSite.APISorting.RandomNumAPI
                 //Adds a header specifying that the request should return a JSON response
                 client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
                 //Gets the response from the API and stores it in a new HttpResponseMessage object
-                HttpResponseMessage response = await client.GetAsync("http://www.randomnumberapi.com/api/v1.0/random?min=0&max=100&count=100");
+                HttpResponseMessage response = await client.GetAsync("http://www.randomnumberapi.com/api/v1.0/random?min=6456&max=10000&count=100");
                 //Ensures the API connection was successful
                 response.EnsureSuccessStatusCode();
                 //Deserializes the response String and turns it into a List of type int
