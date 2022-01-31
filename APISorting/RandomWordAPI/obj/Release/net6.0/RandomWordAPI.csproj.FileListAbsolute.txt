@@ -12,3 +12,4 @@ D:\Everything\CodingForFun\AlgorithmSite\APISorting\RandomWordAPI\obj\Release\ne
 D:\Everything\CodingForFun\AlgorithmSite\APISorting\RandomWordAPI\obj\Release\net6.0\ref\RandomWordAPI.dll
 D:\Everything\CodingForFun\AlgorithmSite\APISorting\RandomWordAPI\obj\Release\net6.0\RandomWordAPI.pdb
 D:\Everything\CodingForFun\AlgorithmSite\APISorting\RandomWordAPI\obj\Release\net6.0\RandomWordAPI.genruntimeconfig.cache
+D:\Everything\CodingForFun\AlgorithmSite\APISorting\RandomWordAPI\obj\Release\net6.0\RandomWordAPI.csproj.AssemblyReference.cache

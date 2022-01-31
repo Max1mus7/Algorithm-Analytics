@@ -11,5 +11,8 @@
     <Folder Include="Business\" />
     <Folder Include="Data\" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="APISorting\SortInterface\SortInterface.csproj" />
+  </ItemGroup>
   
 </Project>

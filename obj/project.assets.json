@@ -10,6 +10,46 @@
         "runtime": {
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         }
+      },
+      "RandomNumAPI/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Newtonsoft.Json": "13.0.1"
+        },
+        "compile": {
+          "bin/placeholder/RandomNumAPI.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/RandomNumAPI.dll": {}
+        }
+      },
+      "RandomWordAPI/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Newtonsoft.Json": "13.0.1"
+        },
+        "compile": {
+          "bin/placeholder/RandomWordAPI.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/RandomWordAPI.dll": {}
+        }
+      },
+      "SortInterface/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "RandomNumAPI": "1.0.0",
+          "RandomWordAPI": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/SortInterface.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SortInterface.dll": {}
+        }
       }
     }
   },
@@ -40,11 +80,27 @@
         "newtonsoft.json.nuspec",
         "packageIcon.png"
       ]
+    },
+    "RandomNumAPI/1.0.0": {
+      "type": "project",
+      "path": "APISorting/RandomNumAPI/RandomNumAPI.csproj",
+      "msbuildProject": "APISorting/RandomNumAPI/RandomNumAPI.csproj"
+    },
+    "RandomWordAPI/1.0.0": {
+      "type": "project",
+      "path": "APISorting/RandomWordAPI/RandomWordAPI.csproj",
+      "msbuildProject": "APISorting/RandomWordAPI/RandomWordAPI.csproj"
+    },
+    "SortInterface/1.0.0": {
+      "type": "project",
+      "path": "APISorting/SortInterface/SortInterface.csproj",
+      "msbuildProject": "APISorting/SortInterface/SortInterface.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "Newtonsoft.Json >= 13.0.1"
+      "Newtonsoft.Json >= 13.0.1",
+      "SortInterface >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -78,7 +134,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\Everything\\CodingForFun\\AlgorithmSite\\APISorting\\SortInterface\\SortInterface.csproj": {
+              "projectPath": "D:\\Everything\\CodingForFun\\AlgorithmSite\\APISorting\\SortInterface\\SortInterface.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
