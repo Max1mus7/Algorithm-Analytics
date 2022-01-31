@@ -19,6 +19,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SortAnalytics", "APISorting
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SortInterface", "APISorting\SortInterface\SortInterface.csproj", "{D69D4DE7-1A6D-4ACD-8DF1-C23DDF259756}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Quicksort", "APISorting\Quicksort\Quicksort.csproj", "{07C2DE44-B12C-477A-BA86-1D0503327551}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MergeSort", "APISorting\MergeSort\MergeSort.csproj", "{C33FC896-711A-4BAC-AB79-0878F05D9206}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +61,14 @@ Global
 		{D69D4DE7-1A6D-4ACD-8DF1-C23DDF259756}.Debug|Any CPU.Build.0 = Release|Any CPU
 		{D69D4DE7-1A6D-4ACD-8DF1-C23DDF259756}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D69D4DE7-1A6D-4ACD-8DF1-C23DDF259756}.Release|Any CPU.Build.0 = Release|Any CPU
+		{07C2DE44-B12C-477A-BA86-1D0503327551}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07C2DE44-B12C-477A-BA86-1D0503327551}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07C2DE44-B12C-477A-BA86-1D0503327551}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07C2DE44-B12C-477A-BA86-1D0503327551}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C33FC896-711A-4BAC-AB79-0878F05D9206}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C33FC896-711A-4BAC-AB79-0878F05D9206}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C33FC896-711A-4BAC-AB79-0878F05D9206}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C33FC896-711A-4BAC-AB79-0878F05D9206}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

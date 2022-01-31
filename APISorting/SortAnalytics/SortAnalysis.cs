@@ -171,7 +171,7 @@ namespace AlgorithmSite.APISorting.SortAnalytics
             //instantiates a new sorter of type BubbleSorter
             wordSorter = new BubbleSorter<string>();
             //declares and instantiates a new default RandomNumList object to get random numbers from an API
-            RandomWordList rLister = new RandomWordList();
+            RandomWordList rLister = new();
             //declares and instantiates a new list to hold the string representations of each sorted list
             List<List<string>> sortedLists = new List<List<string>>();
             for(int i = 0; i < attempts; i++)
