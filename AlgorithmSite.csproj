@@ -5,12 +5,15 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Remove="Data\**" />
+    <Content Remove="Data\**" />
+    <EmbeddedResource Remove="Data\**" />
+    <None Remove="Data\**" />
+  </ItemGroup>
+  <ItemGroup>
     <PackageReference Include="MongoDB.Bson" Version="2.14.1" />
     <PackageReference Include="MongoDB.Driver" Version="2.14.1" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Data\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="APISorting\SortInterface\SortInterface.csproj" />
