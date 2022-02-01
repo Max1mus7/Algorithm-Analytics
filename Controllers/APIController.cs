@@ -52,8 +52,11 @@ namespace AlgorithmSite.Controllers
             return NoContent();
         }
 
+        //=========================================================================================================
+        //Deletion
+        //Deletes with an HTTP DELETE request
         [HttpDelete("{id:length(24)}")]
-        public async Task<IActionResult> Delete(string id)
+        public async Task<IActionResult> HttpDelete(string id)
         {
             var sorts = await _analysesService.GetAsync(id);
             if(sorts is null)
@@ -65,14 +68,94 @@ namespace AlgorithmSite.Controllers
             return NoContent();
         }
 
+        //Deletes with an HTTP GET request
+        [HttpGet("delete/{id:length(24)}")]
+        public async Task<IActionResult> Delete(string id)
+        {
+            var sorts = await _analysesService.GetAsync(id);
+            if (sorts is null)
+            {
+                return NotFound();
+            }
+            await _analysesService.RemoveAsync(sorts.Id);
+            return NoContent();
+        }
+
+        //=========================================================================================================
+        //Creation
+        //===========================================
+        //Default Data Creation
+
+        //creates a default bubble sort analysis on words and adds it to the database
         [HttpGet]
-        [Route("createdefault")]
-        public async Task<IActionResult> Post()
+        [Route("createdefault/bubble/word")]
+        public async Task<IActionResult> BubbleSortWordDefault()
         {
             AnalysisObjDBModel newSorts = new AnalysisObjDBModel(await _sortAnalyzer.GetDefaultWordBubbleAnalysis());
             await _analysesService.CreateAsync(newSorts);
             return CreatedAtAction(nameof(Get), new { id = newSorts.Id }, newSorts);
         }
+        //creates a default bubble sort analysis on numbers and adds it to the database
+        [HttpGet]
+        [Route("createdefault/bubble/number")]
+        public async Task<IActionResult> BubbleSortNumDefault()
+        {
+            AnalysisObjDBModel newSorts = new AnalysisObjDBModel(await _sortAnalyzer.GetDefaultNumBubbleAnalysis());
+            await _analysesService.CreateAsync(newSorts);
+            return CreatedAtAction(nameof(Get), new { id = newSorts.Id }, newSorts);
+        }
+
+        //creates a default insertion sort analysis on words and adds it to the database
+        [HttpGet]
+        [Route("createdefault/insertion/word")]
+        public async Task<IActionResult> InsertionSortWordDefault()
+        {
+            AnalysisObjDBModel newSorts = new AnalysisObjDBModel(await _sortAnalyzer.GetDefaultWordInsertionAnalysis());
+            await _analysesService.CreateAsync(newSorts);
+            return CreatedAtAction(nameof(Get), new { id = newSorts.Id }, newSorts);
+        }
+
+        //creates a default insertion sort analysis on numbers and adds it to the database
+        [HttpGet]
+        [Route("createdefault/insertion/number")]
+        public async Task<IActionResult> InsertionSortNumDefault()
+        {
+            AnalysisObjDBModel newSorts = new AnalysisObjDBModel(await _sortAnalyzer.GetDefaultNumInsertionAnalysis());
+            await _analysesService.CreateAsync(newSorts);
+            return CreatedAtAction(nameof(Get), new { id = newSorts.Id }, newSorts);
+        }
+
+        //creates a default selection sort analysis on words and adds it to the database
+        [HttpGet]
+        [Route("createdefault/selection/word")]
+        public async Task<IActionResult> SelectionSortWordDefault()
+        {
+            AnalysisObjDBModel newSorts = new AnalysisObjDBModel(await _sortAnalyzer.GetDefaultWordSelectionAnalysis());
+            await _analysesService.CreateAsync(newSorts);
+            return CreatedAtAction(nameof(Get), new { id = newSorts.Id }, newSorts);
+        }
+
+        //creates a default selection sort analysis on numbers and adds it to the database
+        [HttpGet]
+        [Route("createdefault/selection/number")]
+        public async Task<IActionResult> SelectionSortNumDefault()
+        {
+            AnalysisObjDBModel newSorts = new AnalysisObjDBModel(await _sortAnalyzer.GetDefaultNumSelectionAnalysis());
+            await _analysesService.CreateAsync(newSorts);
+            return CreatedAtAction(nameof(Get), new { id = newSorts.Id }, newSorts);
+        }
+
+        //Default Data Creation
+        //===========================================
+        //Custom Data Creation
+
+
+
+
+        //Custom Data Creation
+        //===========================================
+        //Creation
+        //=========================================================================================================
 
         public IActionResult Index()
         {

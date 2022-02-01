@@ -50,7 +50,17 @@
       "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
       "DisplayName": "Miscellaneous Files",
       "ColorIndex": -1
+    },
+    "c33fc896-711a-4bac-ab79-0878f05d9206": {
+      "ProjectGuid": "c33fc896-711a-4bac-ab79-0878f05d9206",
+      "DisplayName": "MergeSort",
+      "ColorIndex": 9
+    },
+    "07c2de44-b12c-477a-ba86-1d0503327551": {
+      "ProjectGuid": "07c2de44-b12c-477a-ba86-1d0503327551",
+      "DisplayName": "Quicksort",
+      "ColorIndex": 10
     }
   },
-  "NextColorIndex": 9
+  "NextColorIndex": 11
 }

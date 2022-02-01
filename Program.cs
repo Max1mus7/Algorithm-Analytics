@@ -10,6 +10,7 @@ builder.Services.Configure<AlgorithmDatabaseSettings>(builder.Configuration.GetS
 builder.Services.AddSingleton<AnalysesService>();
 builder.Services.AddSingleton<SortAnalyzer>();
 
+
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
