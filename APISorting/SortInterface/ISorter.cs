@@ -10,7 +10,7 @@ namespace AlgorithmSite.APISorting.SortInterface
     public interface ISorter<T>
     {
         //Sorts a list of type T based on the sorting class
-        public List<T> Sort(List<T> list);
+        public List<T> Sort<T>(List<T> list) where T : IComparable<T>;
         //Sorts a list of random numbers obtained from an API based on the sorting class
         public Task<List<int>> SortNewNumList(RandomNumList rLister);
         public Task<List<string>> SortNewWordList(RandomWordList rLister);

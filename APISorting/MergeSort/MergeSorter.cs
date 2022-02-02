@@ -12,7 +12,7 @@ namespace MergeSort
     public class MergeSorter<T> : ISorter<T>
     {
         //TODO: implement MergeSort
-        public List<T> Sort(List<T> list)
+        public List<T> Sort<T>(List<T> list) where T : IComparable<T>
         {
             throw new NotImplementedException();
         }

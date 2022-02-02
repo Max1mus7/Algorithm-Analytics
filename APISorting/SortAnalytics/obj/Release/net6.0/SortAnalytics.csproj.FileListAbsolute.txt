@@ -59,3 +59,13 @@ D:\Everything\CodingForFun\AlgorithmSite\APISorting\SortAnalytics\obj\Release\ne
 D:\Everything\CodingForFun\AlgorithmSite\APISorting\SortAnalytics\obj\Release\net6.0\ref\SortAnalytics.dll
 D:\Everything\CodingForFun\AlgorithmSite\APISorting\SortAnalytics\obj\Release\net6.0\SortAnalytics.pdb
 D:\Everything\CodingForFun\AlgorithmSite\APISorting\SortAnalytics\obj\Release\net6.0\SortAnalytics.genruntimeconfig.cache
+D:\Everything\CodingForFun\AlgorithmSite\APISorting\SortAnalytics\bin\Release\net6.0\MergeSort.deps.json
+D:\Everything\CodingForFun\AlgorithmSite\APISorting\SortAnalytics\bin\Release\net6.0\MergeSort.runtimeconfig.json
+D:\Everything\CodingForFun\AlgorithmSite\APISorting\SortAnalytics\bin\Release\net6.0\MergeSort.exe
+D:\Everything\CodingForFun\AlgorithmSite\APISorting\SortAnalytics\bin\Release\net6.0\Quicksort.deps.json
+D:\Everything\CodingForFun\AlgorithmSite\APISorting\SortAnalytics\bin\Release\net6.0\Quicksort.runtimeconfig.json
+D:\Everything\CodingForFun\AlgorithmSite\APISorting\SortAnalytics\bin\Release\net6.0\Quicksort.exe
+D:\Everything\CodingForFun\AlgorithmSite\APISorting\SortAnalytics\bin\Release\net6.0\MergeSort.dll
+D:\Everything\CodingForFun\AlgorithmSite\APISorting\SortAnalytics\bin\Release\net6.0\Quicksort.dll
+D:\Everything\CodingForFun\AlgorithmSite\APISorting\SortAnalytics\bin\Release\net6.0\MergeSort.pdb
+D:\Everything\CodingForFun\AlgorithmSite\APISorting\SortAnalytics\bin\Release\net6.0\Quicksort.pdb

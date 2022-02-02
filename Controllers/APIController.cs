@@ -5,11 +5,13 @@ using AlgorithmSite.Business;
 
 namespace AlgorithmSite.Controllers
 {
+    //Controller allowing connection to API
     [ApiController]
+    //Controls the routing
     [Route("api/sorts")]
     public class APIController : Controller
     {
-
+        //creates a singleton for 
         private readonly AnalysesService _analysesService;
         private readonly SortAnalyzer _sortAnalyzer;
 
@@ -141,6 +143,24 @@ namespace AlgorithmSite.Controllers
         public async Task<IActionResult> SelectionSortNumDefault()
         {
             AnalysisObjDBModel newSorts = new AnalysisObjDBModel(await _sortAnalyzer.GetDefaultNumSelectionAnalysis());
+            await _analysesService.CreateAsync(newSorts);
+            return CreatedAtAction(nameof(Get), new { id = newSorts.Id }, newSorts);
+        }
+        //creates a default quicksort analysis on numbers and adds it to the database
+        [HttpGet]
+        [Route("createdefault/quicksort/number")]
+        public async Task<IActionResult> QuicksortNumDefault()
+        {
+            AnalysisObjDBModel newSorts = new AnalysisObjDBModel(await _sortAnalyzer.GetDefaultNumQuicksortAnalysis());
+            await _analysesService.CreateAsync(newSorts);
+            return CreatedAtAction(nameof(Get), new { id = newSorts.Id }, newSorts);
+        }
+        //creates a default quicksort analysis on words and adds it to the database
+        [HttpGet]
+        [Route("createdefault/quicksort/word")]
+        public async Task<IActionResult> QuicksortWordDefault()
+        {
+            AnalysisObjDBModel newSorts = new AnalysisObjDBModel(await _sortAnalyzer.GetDefaultWordQuicksortAnalysis());
             await _analysesService.CreateAsync(newSorts);
             return CreatedAtAction(nameof(Get), new { id = newSorts.Id }, newSorts);
         }

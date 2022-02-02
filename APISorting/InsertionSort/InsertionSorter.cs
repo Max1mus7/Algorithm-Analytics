@@ -21,7 +21,7 @@ namespace AlgorithmSite.APISorting.InsertionSort
         }
         //Performs an Insertion Sort on a list with items of data type T.
         //Returns the sorted list.
-        public List<T> Sort(List<T> list)
+        public List<T> Sort<T>(List<T> list) where T : IComparable<T>
         {
             List<T> resultList = new List<T>();
             return resultList;
