@@ -2,6 +2,9 @@
 using AlgorithmSite.Models;
 using AlgorithmSite.Services;
 using AlgorithmSite.Business;
+using Newtonsoft.Json;
+using AlgorithmSite.APISorting.SortAnalytics;
+using System.Text;
 
 namespace AlgorithmSite.Controllers
 {
@@ -11,10 +14,11 @@ namespace AlgorithmSite.Controllers
     [Route("api/sorts")]
     public class APIController : Controller
     {
-        //creates a singleton for 
+        //defines a singleton for each service class
         private readonly AnalysesService _analysesService;
         private readonly SortAnalyzer _sortAnalyzer;
 
+        //upon construction, populates singletons
         public APIController(AnalysesService analysesService, SortAnalyzer sortAnalyzer)
         {
             _analysesService = analysesService;
@@ -30,6 +34,25 @@ namespace AlgorithmSite.Controllers
         {
             var sortsObj = await _analysesService.GetAsync(id);
             return sortsObj is null ? NotFound() : sortsObj;
+        }
+        
+        [HttpPost("createcustom")]
+        public async Task<IActionResult> PostCustom()
+        {
+            using (StreamReader sr = new StreamReader(Request.Body, Encoding.UTF8))
+            {
+                try
+                {
+                    string newSortsJSON = await sr.ReadToEndAsync();
+                    AnalysisObjDBModel newSorts = new AnalysisObjDBModel(JsonConvert.DeserializeObject<AnalysisObj>(newSortsJSON));
+                    await _analysesService.CreateAsync(newSorts);
+                    return CreatedAtAction(nameof(Get), new { id = newSorts.Id }, newSorts);
+                }
+                catch (Exception ex)
+                {
+                    return BadRequest(ex.Message);
+                }
+            }
         }
 
         [HttpPost]
