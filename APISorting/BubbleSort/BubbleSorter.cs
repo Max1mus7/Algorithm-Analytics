@@ -22,7 +22,7 @@ namespace AlgorithmSite.APISorting.BubbleSort
         /*This method performs a bubble sort on a list of type T. Returns the sorted list.
         * ***This method is not properly implemented yet***
         */
-        public List<T> Sort(List<T> list)
+        public List<T> Sort<T>(List<T> list) where T : IComparable<T>
         {
             List<T> resultList = new List<T>();
             return resultList;

@@ -192,6 +192,36 @@
           "bin/placeholder/InsertionSort.dll": {}
         }
       },
+      "MergeSort/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "RandomNumAPI": "1.0.0",
+          "RandomWordAPI": "1.0.0",
+          "SortInterface": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/MergeSort.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MergeSort.dll": {}
+        }
+      },
+      "Quicksort/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "RandomNumAPI": "1.0.0",
+          "RandomWordAPI": "1.0.0",
+          "SortInterface": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Quicksort.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Quicksort.dll": {}
+        }
+      },
       "RandomNumAPI/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -514,6 +544,16 @@
       "path": "../InsertionSort/InsertionSort.csproj",
       "msbuildProject": "../InsertionSort/InsertionSort.csproj"
     },
+    "MergeSort/1.0.0": {
+      "type": "project",
+      "path": "../MergeSort/MergeSort.csproj",
+      "msbuildProject": "../MergeSort/MergeSort.csproj"
+    },
+    "Quicksort/1.0.0": {
+      "type": "project",
+      "path": "../Quicksort/Quicksort.csproj",
+      "msbuildProject": "../Quicksort/Quicksort.csproj"
+    },
     "RandomNumAPI/1.0.0": {
       "type": "project",
       "path": "../RandomNumAPI/RandomNumAPI.csproj",
@@ -539,8 +579,10 @@
     "net6.0": [
       "BubbleSort >= 1.0.0",
       "InsertionSort >= 1.0.0",
+      "MergeSort >= 1.0.0",
       "MongoDB.Bson >= 2.14.1",
       "MongoDB.Driver >= 2.14.1",
+      "Quicksort >= 1.0.0",
       "RandomNumAPI >= 1.0.0",
       "RandomWordAPI >= 1.0.0",
       "SelectionSort >= 1.0.0",
@@ -584,6 +626,12 @@
             },
             "D:\\Everything\\CodingForFun\\AlgorithmSite\\APISorting\\InsertionSort\\InsertionSort.csproj": {
               "projectPath": "D:\\Everything\\CodingForFun\\AlgorithmSite\\APISorting\\InsertionSort\\InsertionSort.csproj"
+            },
+            "D:\\Everything\\CodingForFun\\AlgorithmSite\\APISorting\\MergeSort\\MergeSort.csproj": {
+              "projectPath": "D:\\Everything\\CodingForFun\\AlgorithmSite\\APISorting\\MergeSort\\MergeSort.csproj"
+            },
+            "D:\\Everything\\CodingForFun\\AlgorithmSite\\APISorting\\Quicksort\\Quicksort.csproj": {
+              "projectPath": "D:\\Everything\\CodingForFun\\AlgorithmSite\\APISorting\\Quicksort\\Quicksort.csproj"
             },
             "D:\\Everything\\CodingForFun\\AlgorithmSite\\APISorting\\RandomNumAPI\\RandomNumAPI.csproj": {
               "projectPath": "D:\\Everything\\CodingForFun\\AlgorithmSite\\APISorting\\RandomNumAPI\\RandomNumAPI.csproj"

@@ -10,8 +10,10 @@
         "dependencies": {
           "BubbleSort": "1.0.0",
           "InsertionSort": "1.0.0",
+          "MergeSort": "1.0.0",
           "MongoDB.Bson": "2.14.1",
           "MongoDB.Driver": "2.14.1",
+          "Quicksort": "1.0.0",
           "RandomNumAPI": "1.0.0",
           "RandomWordAPI": "1.0.0",
           "SelectionSort": "1.0.0",
@@ -168,6 +170,26 @@
           "InsertionSort.dll": {}
         }
       },
+      "MergeSort/1.0.0": {
+        "dependencies": {
+          "RandomNumAPI": "1.0.0",
+          "RandomWordAPI": "1.0.0",
+          "SortInterface": "1.0.0"
+        },
+        "runtime": {
+          "MergeSort.dll": {}
+        }
+      },
+      "Quicksort/1.0.0": {
+        "dependencies": {
+          "RandomNumAPI": "1.0.0",
+          "RandomWordAPI": "1.0.0",
+          "SortInterface": "1.0.0"
+        },
+        "runtime": {
+          "Quicksort.dll": {}
+        }
+      },
       "RandomNumAPI/1.0.0": {
         "dependencies": {
           "Newtonsoft.Json": "13.0.1"
@@ -281,6 +303,16 @@
       "sha512": ""
     },
     "InsertionSort/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MergeSort/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Quicksort/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

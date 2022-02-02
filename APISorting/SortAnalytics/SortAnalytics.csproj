@@ -6,6 +6,8 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\MergeSort\MergeSort.csproj" />
+    <ProjectReference Include="..\Quicksort\Quicksort.csproj" />
     <ProjectReference Include="..\RandomNumAPI\RandomNumAPI.csproj" />
     <ProjectReference Include="..\BubbleSort\BubbleSort.csproj" />
     <ProjectReference Include="..\SelectionSort\SelectionSort.csproj" />
