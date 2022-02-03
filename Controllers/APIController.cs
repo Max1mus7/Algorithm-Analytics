@@ -37,27 +37,7 @@ namespace AlgorithmSite.Controllers
             var sortsObj = await _analysesService.GetAsync(id);
             return sortsObj is null ? NotFound() : sortsObj;
         }
-        //create a custom record given the information required for a sort
-        [HttpPost("createcustom")]
-        public async Task<IActionResult> PostCustom()
-        {
-            //read the request body
-            using (StreamReader sr = new StreamReader(Request.Body, Encoding.UTF8))
-            {
-                try
-                {
-                    //get the string version of the body(should be JSON)
-                    string newSortsJSON = await sr.ReadToEndAsync();
-                    AnalysisObjDBModel newSorts = new AnalysisObjDBModel(JsonConvert.DeserializeObject<AnalysisObj>(newSortsJSON));
-                    await _analysesService.CreateAsync(newSorts);
-                    return CreatedAtAction(nameof(Get), new { id = newSorts.Id }, newSorts);
-                }
-                catch (Exception ex)
-                {
-                    return BadRequest(ex.Message);
-                }
-            }
-        }
+        
 
         [HttpPost]
         public async Task<IActionResult> Post(AnalysisObjDBModel newSorts)
@@ -192,11 +172,52 @@ namespace AlgorithmSite.Controllers
             return CreatedAtAction(nameof(Get), new { id = newSorts.Id }, newSorts);
         }
 
+        //creates a default merge sort analysis on numbers and adds it to the database
+        [HttpGet]
+        [Route("createdefault/merge/number")]
+        public async Task<IActionResult> MergeSortNumDefault()
+        {
+            AnalysisObjDBModel newSorts = new AnalysisObjDBModel(await _sortAnalyzer.GetDefaultNumMergeAnalysis());
+            await _analysesService.CreateAsync(newSorts);
+            return CreatedAtAction(nameof(Get), new { id = newSorts.Id }, newSorts);
+        }
+        //creates a default quicksort analysis on words and adds it to the database
+        [HttpGet]
+        [Route("createdefault/merge/word")]
+        public async Task<IActionResult> MergeWordDefault()
+        {
+            AnalysisObjDBModel newSorts = new AnalysisObjDBModel(await _sortAnalyzer.GetDefaultWordMergeAnalysis());
+            await _analysesService.CreateAsync(newSorts);
+            return CreatedAtAction(nameof(Get), new { id = newSorts.Id }, newSorts);
+        }
+
+
+
         //Default Data Creation
         //===========================================
         //Custom Data Creation
 
-
+        //create a custom record given the information required for a sort in the request body as JSON
+        [HttpPost("createcustom")]
+        public async Task<IActionResult> PostCustom()
+        {
+            //read the request body
+            using (StreamReader sr = new StreamReader(Request.Body, Encoding.UTF8))
+            {
+                try
+                {
+                    //get the string version of the body(should be JSON)
+                    string newSortsJSON = await sr.ReadToEndAsync();
+                    AnalysisObjDBModel newSorts = new AnalysisObjDBModel(JsonConvert.DeserializeObject<AnalysisObj>(newSortsJSON));
+                    await _analysesService.CreateAsync(newSorts);
+                    return CreatedAtAction(nameof(Get), new { id = newSorts.Id }, newSorts);
+                }
+                catch (Exception ex)
+                {
+                    return BadRequest(ex.Message);
+                }
+            }
+        }
 
 
         //Custom Data Creation
