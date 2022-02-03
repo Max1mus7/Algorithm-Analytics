@@ -19,7 +19,7 @@ This is a passion project designed and created by myself(Max1mus7) in order to n
 
 
 ## API Functionality
-> For a closer look at API documentation, check https://github.com/Max1mus7/Algorithm-Analytics/Documentation/AlgoAPI.postman_collection.json.  
+> For a closer look at API documentation, check https://github.com/Max1mus7/Algorithm-Analytics/blob/main/Documentation/AlgoAPI.postman_collection.json.  
 > A Swagger version is likely to come in the future. 
 ### **Sort Types and Names**
 
