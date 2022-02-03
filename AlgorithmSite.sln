@@ -19,9 +19,14 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SortAnalytics", "APISorting
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SortInterface", "APISorting\SortInterface\SortInterface.csproj", "{D69D4DE7-1A6D-4ACD-8DF1-C23DDF259756}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Quicksort", "APISorting\Quicksort\Quicksort.csproj", "{07C2DE44-B12C-477A-BA86-1D0503327551}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Quicksort", "APISorting\Quicksort\Quicksort.csproj", "{07C2DE44-B12C-477A-BA86-1D0503327551}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MergeSort", "APISorting\MergeSort\MergeSort.csproj", "{C33FC896-711A-4BAC-AB79-0878F05D9206}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MergeSort", "APISorting\MergeSort\MergeSort.csproj", "{C33FC896-711A-4BAC-AB79-0878F05D9206}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{7AC5C7E1-A906-400B-9E0E-7FC7B43D9D06}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

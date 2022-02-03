@@ -19,32 +19,62 @@ namespace AlgorithmSite.APISorting.Quicksort
         }
         public List<T> Sort<T>(List<T> list) where T : IComparable<T>
         {
-            try
+            if (list == null || list.Count <= 0)
             {
-                //
-                if (list == null || list.Count <= 0)
-                {
-                    throw new IndexOutOfRangeException("No items included in list");
-                }
+                throw new IndexOutOfRangeException("No items included in list");
+            }
 
-                QuickSortGen(list, 0, list.Count - 1);
-                return list;
-            }
-            catch(IndexOutOfRangeException e)
-            {
-                return null;
-            }
-            return new List<T>();
+            QuickSortGen(list, 0, list.Count - 1);
+            return list;
         }
 
         public void QuickSortGen<T>(List<T> list, int start, int end) where T : IComparable<T>
         {
+            if (start < end)
+            {
+                int pivot = PartitionGen(list, start, end);
 
+                if (pivot > 1)
+                {
+                    QuickSortGen(list, start, pivot - 1);
+                }
+                if (pivot + 1 < end)
+                {
+                    QuickSortGen(list, pivot + 1, end);
+                }
+            }
         }
 
-        public T PartitionGen<T>(List<T> list, int start, int end) where T : IComparable<T>
+        public int PartitionGen<T>(List<T> list, int start, int end) where T : IComparable<T>
         {
-            return list[0];
+            T pivot = list[start];
+            while (true)
+            {
+                while (list[start].CompareTo(pivot) < 0)
+                {
+                    Iterations++;
+                    start++;
+                }
+                while (list[end].CompareTo(pivot) > 0)
+                {
+                    Iterations++;
+                    end--;
+                }
+                if (start < end)
+                {
+                    if (list[start].CompareTo(list[end]) == 0)
+                    {
+                        return end;
+                    }
+                    T temp = list[start];
+                    list[start] = list[end];
+                    list[end] = temp;
+                }
+                else
+                {
+                    return end;
+                }
+            }
         }
 
         //Sorts a default list of 100 random numbers and sorts them using a quicksort

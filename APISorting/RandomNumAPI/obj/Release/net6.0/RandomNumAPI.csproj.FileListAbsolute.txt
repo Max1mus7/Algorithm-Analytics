@@ -5,7 +5,6 @@ D:\Everything\CodingForFun\AlgorithmSite\APISorting\RandomNumAPI\bin\Release\net
 D:\Everything\CodingForFun\AlgorithmSite\APISorting\RandomNumAPI\bin\Release\net6.0\ref\RandomNumAPI.dll
 D:\Everything\CodingForFun\AlgorithmSite\APISorting\RandomNumAPI\bin\Release\net6.0\RandomNumAPI.pdb
 D:\Everything\CodingForFun\AlgorithmSite\APISorting\RandomNumAPI\bin\Release\net6.0\Newtonsoft.Json.dll
-D:\Everything\CodingForFun\AlgorithmSite\APISorting\RandomNumAPI\obj\Release\net6.0\RandomNumAPI.csproj.AssemblyReference.cache
 D:\Everything\CodingForFun\AlgorithmSite\APISorting\RandomNumAPI\obj\Release\net6.0\RandomNumAPI.GeneratedMSBuildEditorConfig.editorconfig
 D:\Everything\CodingForFun\AlgorithmSite\APISorting\RandomNumAPI\obj\Release\net6.0\RandomNumAPI.csproj.CoreCompileInputs.cache
 D:\Everything\CodingForFun\AlgorithmSite\APISorting\RandomNumAPI\obj\Release\net6.0\RandomNumAPI.csproj.CopyComplete
@@ -13,3 +12,4 @@ D:\Everything\CodingForFun\AlgorithmSite\APISorting\RandomNumAPI\obj\Release\net
 D:\Everything\CodingForFun\AlgorithmSite\APISorting\RandomNumAPI\obj\Release\net6.0\ref\RandomNumAPI.dll
 D:\Everything\CodingForFun\AlgorithmSite\APISorting\RandomNumAPI\obj\Release\net6.0\RandomNumAPI.pdb
 D:\Everything\CodingForFun\AlgorithmSite\APISorting\RandomNumAPI\obj\Release\net6.0\RandomNumAPI.genruntimeconfig.cache
+D:\Everything\CodingForFun\AlgorithmSite\APISorting\RandomNumAPI\obj\Release\net6.0\RandomNumAPI.csproj.AssemblyReference.cache
