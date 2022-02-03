@@ -10,6 +10,7 @@ using AlgorithmSite.APISorting.RandomWordAPI;
 using Newtonsoft.Json;
 using AlgorithmSite.APISorting.SortInterface;
 using AlgorithmSite.APISorting.Quicksort;
+using AlgorithmSite.APISorting.MergeSort;
 
 namespace AlgorithmSite.APISorting.SortAnalytics
 {
@@ -247,6 +248,65 @@ namespace AlgorithmSite.APISorting.SortAnalytics
             int iterations = QuickSorter<string>.Iterations;
             //Declares and instantiates an AnalysisObj object given the information from the sorts
             AnalysisObj analyzedSorts = new AnalysisObj(new string[] { "Quick Sort", "" + iterations, "" + attempts }, sortedLists);
+            //returns the AnalysisObj object
+            return analyzedSorts;
+        }
+
+        //Performs a set of merge sorts on default randomized data and returns an AnalysisObj object containing the result
+        public async Task<AnalysisObj> GetDefaultNumMergeAnalysis()
+        {
+            //number of sorts is 100 by default
+            int attempts = 100;
+            //instantiates a new sorter of type QuickSorter
+            numSorter = new MergeSorter<int>();
+            //declares and instantiates a new default RandomNumList object to get random numbers from an API
+            RandomNumList rLister = new RandomNumList();
+            //declares and instantiates a new list to hold the string representations of each sorted list
+            List<List<string>> sortedLists = new List<List<string>>();
+            for (int i = 0; i < attempts; i++)
+            {
+                //sorts a new list
+                List<int> sortedList = await numSorter.SortNewNumList(rLister);
+                List<string> listItems = new List<string>();
+                foreach (int item in sortedList)
+                {
+                    listItems.Add(item + "");
+                }
+                sortedLists.Add(listItems);
+                //rLister.PrintList(sortedList);
+                Console.WriteLine("Sort complete!");
+            }
+            //declare an int to hold the iteration count from the QuickSorter
+            int iterations = MergeSorter<int>.Iterations;
+            //Declares and instantiates an AnalysisObj object given the information from the sorts
+            AnalysisObj analyzedSorts = new AnalysisObj(new string[] { "Merge Sort", "" + iterations, "" + attempts }, sortedLists);
+            //returns the AnalysisObj object
+            return analyzedSorts;
+        }
+
+        //Performs a set of merge sorts on default randomized data and returns an AnalysisObj object containing the result
+        public async Task<AnalysisObj> GetDefaultWordMergeAnalysis()
+        {
+            //number of sorts is 100 by default
+            int attempts = 100;
+            //instantiates a new sorter of type QuickSorter
+            wordSorter = new MergeSorter<string>();
+            //declares and instantiates a new default RandomNumList object to get random numbers from an API
+            RandomWordList rLister = new RandomWordList();
+            //declares and instantiates a new list to hold the string representations of each sorted list
+            List<List<string>> sortedLists = new List<List<string>>();
+            for (int i = 0; i < attempts; i++)
+            {
+                //sorts a new list
+                List<string> sortedList = await wordSorter.SortNewWordList(rLister);
+                sortedLists.Add(sortedList);
+                //rLister.PrintList(sortedList);
+                Console.WriteLine("Sort complete!");
+            }
+            //declare an int to hold the iteration count from the QuickSorter
+            int iterations = MergeSorter<string>.Iterations;
+            //Declares and instantiates an AnalysisObj object given the information from the sorts
+            AnalysisObj analyzedSorts = new AnalysisObj(new string[] { "Merge Sort", "" + iterations, "" + attempts }, sortedLists);
             //returns the AnalysisObj object
             return analyzedSorts;
         }

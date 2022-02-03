@@ -25,24 +25,28 @@ namespace AlgorithmSite.Controllers
             _sortAnalyzer = sortAnalyzer;
         } 
 
+        //Gets a list of all data within the DB
         [HttpGet]
         public async Task<List<AnalysisObjDBModel>> Get() =>
             await _analysesService.GetAsync();
 
+        //Gets a specific sort analysis from the database
         [HttpGet("{id:length(24)}")]
         public async Task<ActionResult<AnalysisObjDBModel>> Get(string id)
         {
             var sortsObj = await _analysesService.GetAsync(id);
             return sortsObj is null ? NotFound() : sortsObj;
         }
-        
+        //create a custom record given the information required for a sort
         [HttpPost("createcustom")]
         public async Task<IActionResult> PostCustom()
         {
+            //read the request body
             using (StreamReader sr = new StreamReader(Request.Body, Encoding.UTF8))
             {
                 try
                 {
+                    //get the string version of the body(should be JSON)
                     string newSortsJSON = await sr.ReadToEndAsync();
                     AnalysisObjDBModel newSorts = new AnalysisObjDBModel(JsonConvert.DeserializeObject<AnalysisObj>(newSortsJSON));
                     await _analysesService.CreateAsync(newSorts);

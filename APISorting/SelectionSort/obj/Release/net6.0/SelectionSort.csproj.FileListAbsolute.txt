@@ -20,6 +20,7 @@ D:\Everything\CodingForFun\AlgorithmSite\APISorting\SelectionSort\bin\Release\ne
 D:\Everything\CodingForFun\AlgorithmSite\APISorting\SelectionSort\bin\Release\net6.0\SortInterface.pdb
 D:\Everything\CodingForFun\AlgorithmSite\APISorting\SelectionSort\bin\Release\net6.0\RandomNumAPI.pdb
 D:\Everything\CodingForFun\AlgorithmSite\APISorting\SelectionSort\bin\Release\net6.0\RandomWordAPI.pdb
+D:\Everything\CodingForFun\AlgorithmSite\APISorting\SelectionSort\obj\Release\net6.0\SelectionSort.csproj.AssemblyReference.cache
 D:\Everything\CodingForFun\AlgorithmSite\APISorting\SelectionSort\obj\Release\net6.0\SelectionSort.GeneratedMSBuildEditorConfig.editorconfig
 D:\Everything\CodingForFun\AlgorithmSite\APISorting\SelectionSort\obj\Release\net6.0\SelectionSort.csproj.CoreCompileInputs.cache
 D:\Everything\CodingForFun\AlgorithmSite\APISorting\SelectionSort\obj\Release\net6.0\SelectionSort.csproj.CopyComplete
@@ -27,4 +28,3 @@ D:\Everything\CodingForFun\AlgorithmSite\APISorting\SelectionSort\obj\Release\ne
 D:\Everything\CodingForFun\AlgorithmSite\APISorting\SelectionSort\obj\Release\net6.0\ref\SelectionSort.dll
 D:\Everything\CodingForFun\AlgorithmSite\APISorting\SelectionSort\obj\Release\net6.0\SelectionSort.pdb
 D:\Everything\CodingForFun\AlgorithmSite\APISorting\SelectionSort\obj\Release\net6.0\SelectionSort.genruntimeconfig.cache
-D:\Everything\CodingForFun\AlgorithmSite\APISorting\SelectionSort\obj\Release\net6.0\SelectionSort.csproj.AssemblyReference.cache

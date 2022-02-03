@@ -12,7 +12,7 @@ namespace AlgorithmSite.APISorting.SortAnalytics
             //Declares and instantiates a new default SortAnalysis object
             SortAnalysis sAnalysis = new SortAnalysis();
             //Declares and instantiates a new AnalysisObj object to hold selection sort analysis
-            AnalysisObj aObject = await sAnalysis.GetDefaultNumQuicksortAnalysis();
+            AnalysisObj aObject = await sAnalysis.GetDefaultNumMergeAnalysis();
             //turns the AnalysisObj into a JSON string
             string objString = JsonConvert.SerializeObject(aObject);
             //Prints the JSON information
