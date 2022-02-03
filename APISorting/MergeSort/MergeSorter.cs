@@ -73,13 +73,14 @@ namespace AlgorithmSite.APISorting.MergeSort
                 {
                     nums[k] = left[i];
                     i++;
+                    Iterations++;
                 }
                 else
                 {
                     nums[k] = right[j];
                     j++;
+                    Iterations++;
                 }
-                Iterations++;
                 k++;
             }
 
@@ -149,13 +150,15 @@ namespace AlgorithmSite.APISorting.MergeSort
                 {
                     words[k] = left[i];
                     i++;
+                    Iterations++;
                 }
                 else
                 {
                     words[k] = right[j];
                     j++;
+                    Iterations++;
                 }
-                Iterations++;
+                
                 k++;
             }
 
