@@ -2,16 +2,16 @@
 // API Analytics
 // 1/7/2022
 // This is my own work.
-using System.Net.Http.Headers;
 using Newtonsoft.Json;
+using System.Net.Http.Headers;
 
 namespace AlgorithmSite.APISorting.RandomNumAPI
 {
     //A class used to generate a list of random numbers from an API
-    public class RandomNumList 
+    public class RandomNumList
     {
         //Declares and initializes a nullable List of integers
-        List<int>? Nums {get; set;}
+        List<int>? Nums { get; set; }
         //Sets the list of numbers
         private async Task SetListAsync()
         {
@@ -35,9 +35,9 @@ namespace AlgorithmSite.APISorting.RandomNumAPI
                 //Deserializes the response String and turns it into a List of type int
                 result = JsonConvert.DeserializeObject<List<int>>(await response.Content.ReadAsStringAsync());
                 //checks to see if the API response was null
-                if(result != null)
+                if (result != null)
                 {
-                    for(int i = 0; i < result.Count; i++)
+                    for (int i = 0; i < result.Count; i++)
                     {
                         Nums.Add(result[i]);
                     }
@@ -49,12 +49,12 @@ namespace AlgorithmSite.APISorting.RandomNumAPI
                 }
             }
             //Handles HTTP request-related exceptions
-            catch(HttpRequestException e)
+            catch (HttpRequestException e)
             {
                 Console.WriteLine("Error: {0}", e.Message);
             }
             //Handles all non-HTTP request-related exceptions.
-            catch(Exception e)
+            catch (Exception e)
             {
                 Console.WriteLine("Error: {0}", e.Message);
             }
@@ -63,7 +63,7 @@ namespace AlgorithmSite.APISorting.RandomNumAPI
         public async Task<List<int>> GetListAsync()
         {
             await this.SetListAsync();
-            if(Nums != null)
+            if (Nums != null)
             {
                 return Nums;
             }
@@ -76,9 +76,9 @@ namespace AlgorithmSite.APISorting.RandomNumAPI
         public void PrintList(dynamic list)
         {
             int count = 0;
-            foreach(var item in list)
+            foreach (var item in list)
             {
-                if(count % 10 == 0)
+                if (count % 10 == 0)
                 {
                     Console.WriteLine();
                 }

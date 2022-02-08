@@ -2,11 +2,6 @@
 // API Analytics
 // 1/31/2022
 // This is my own work.
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace AlgorithmSite.APISorting.Quicksort
 {
@@ -15,7 +10,7 @@ namespace AlgorithmSite.APISorting.Quicksort
         public static void Main(string[] args)
         {
             QuickSorter<int> q = new();
-            List<int> nums = new List<int> { 1, 3, 5};
+            List<int> nums = new List<int> { 1, 3, 5 };
             q.Sort(nums);
         }
     }

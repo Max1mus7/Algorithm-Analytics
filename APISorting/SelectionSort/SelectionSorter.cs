@@ -2,9 +2,9 @@
 // API Analytics
 // 1/7/2022
 // This is my own work.
-using AlgorithmSite.APISorting.SortInterface;
 using AlgorithmSite.APISorting.RandomNumAPI;
 using AlgorithmSite.APISorting.RandomWordAPI;
+using AlgorithmSite.APISorting.SortInterface;
 namespace SelectionSort
 {
     //This class can be used to sort a list of type T using a selection sort and get a number that indicates the sort's efficiency.
@@ -33,12 +33,12 @@ namespace SelectionSort
             List<int> newList = await rLister.GetListAsync();
             //performs a selection sort
             int minValIndex = 0;
-            for(int i = 0; i < newList.Count; i++)
+            for (int i = 0; i < newList.Count; i++)
             {
                 minValIndex = i;
-                for(int j = i; j < newList.Count; j++)
+                for (int j = i; j < newList.Count; j++)
                 {
-                    if(newList[j] < newList[minValIndex])
+                    if (newList[j] < newList[minValIndex])
                     {
                         minValIndex = j;
                     }
@@ -60,12 +60,12 @@ namespace SelectionSort
             List<string> newList = await rLister.GetListAsync();
             //performs a selection sort
             int minValIndex = 0;
-            for(int i = 0; i < newList.Count; i++)
+            for (int i = 0; i < newList.Count; i++)
             {
                 minValIndex = i;
-                for(int j = i; j < newList.Count; j++)
+                for (int j = i; j < newList.Count; j++)
                 {
-                    if(newList[j].CompareTo(newList[minValIndex]) < 0)
+                    if (newList[j].CompareTo(newList[minValIndex]) < 0)
                     {
                         minValIndex = j;
                     }

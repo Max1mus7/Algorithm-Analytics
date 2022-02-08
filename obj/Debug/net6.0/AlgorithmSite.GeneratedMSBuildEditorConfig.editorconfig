@@ -15,6 +15,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = D:\Everything\CodingForFun\AlgorithmSite
 build_property._RazorSourceGeneratorDebug = 
 
+[D:/Everything/CodingForFun/AlgorithmSite/Views/API/Sorts.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQVBJXFNvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Everything/CodingForFun/AlgorithmSite/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

@@ -8,7 +8,7 @@ namespace AlgorithmSite.APISorting.SortAnalytics
     public class AnalysisObj
     {
         //int used to keep track of how many iterations a specific sort or set of sorts has taken to sort given data
-        public int Iterations { get; set; } 
+        public int Iterations { get; set; }
         //the amount of sorts that occurred
         public int Attempts { get; set; }
         //the type of sort that was done
@@ -34,7 +34,7 @@ namespace AlgorithmSite.APISorting.SortAnalytics
             this.Attempts = int.Parse(args[2]);
             this.JsonList = jsonList;
             //sets the average iterations value
-            this.AvgIterations = (double)(this.Iterations)/this.Attempts;
+            this.AvgIterations = (double)(this.Iterations) / this.Attempts;
         }
     }
 }

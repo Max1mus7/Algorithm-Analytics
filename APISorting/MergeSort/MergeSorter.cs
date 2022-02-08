@@ -3,9 +3,9 @@
 // 1/31/2022
 // This is my own work. Referenced merge sort at https://www.geeksforgeeks.org/merge-sort/ for this class
 
-using AlgorithmSite.APISorting.SortInterface;
 using AlgorithmSite.APISorting.RandomNumAPI;
 using AlgorithmSite.APISorting.RandomWordAPI;
+using AlgorithmSite.APISorting.SortInterface;
 
 namespace AlgorithmSite.APISorting.MergeSort
 {
@@ -105,10 +105,10 @@ namespace AlgorithmSite.APISorting.MergeSort
 
         public void SortNums(List<int> nums, int l, int r)
         {
-            
-            if(l < r)
+
+            if (l < r)
             {
-                int m = l + (r - l)/2;
+                int m = l + (r - l) / 2;
                 //split the nums list into two halves
                 SortNums(nums, l, m);
                 SortNums(nums, m + 1, r);
@@ -158,7 +158,7 @@ namespace AlgorithmSite.APISorting.MergeSort
                     j++;
                     Iterations++;
                 }
-                
+
                 k++;
             }
 

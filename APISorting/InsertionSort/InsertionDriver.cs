@@ -9,7 +9,7 @@ namespace AlgorithmSite.APISorting.InsertionSort
     {
         public static void Main(string[] args)
         {
-            
+
         }
     }
 }

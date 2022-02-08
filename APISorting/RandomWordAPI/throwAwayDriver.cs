@@ -9,7 +9,7 @@ namespace AlgorithmSite.APISorting.RandomWordAPI
     {
         public static void Main(string[] args)
         {
-            
+
         }
     }
 }
