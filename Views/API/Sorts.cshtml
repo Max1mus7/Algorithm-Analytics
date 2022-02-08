@@ -9,14 +9,15 @@
 
 <p>Test Page</p>
 <link rel="stylesheet" href="~/css/custom-style.css" />
+<script type="text/javascript" src="~/js~/js/site.js"></script>
 <html>
     <head>
 
     </head>
     <body>
         <section id="centered_section">
-            <form id="input-info" method="POST" action="sorts">
-                <input type="radio" id="bubble_selector" name="sort_type" value="bubble" />
+            <form id="input-info" method="POST" action="api/sorts">
+                <input type="radio" id="bubble_selector" name="sort_type" value="bubble" checked="checked"/>
                 <label for="bubble_selector">Bubble</label>
 
                 <input type="radio" id="selection_selector" name="sort_type" value="selection" />
@@ -34,9 +35,10 @@
                 
                 <textarea id="inputBox" cols=75 rows=15></textarea>
                 <br />
-                <input type="submit" id="submission" name="submit" value="Submit" />
+                <input type="submit" id="submission" name="submit" value="Submit" onclick="return validateData()"/>
 
             </form>
         </section>
     </body>
+   
 </html>

@@ -4,6 +4,7 @@ using AlgorithmSite.Models;
 using AlgorithmSite.Services;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
+using System.Web;
 using System.Text;
 
 namespace AlgorithmSite.Controllers
@@ -51,6 +52,26 @@ namespace AlgorithmSite.Controllers
             await _analysesService.CreateAsync(newSorts);
             return CreatedAtAction(nameof(Get), new { id = newSorts.Id }, newSorts);
         }
+
+        //[HttpPost("sorts")]
+        //public async Task<IActionResult> Post(string sort_type, string JSONList)
+        //{
+        //    if (sort_type == null)
+        //    {
+        //        Response.StatusCode = 400;
+        //        return Sorts();
+        //    }
+        //    if(JSONList == null)
+        //    {
+        //        Response.StatusCode = 400;
+        //        return Sorts();
+        //    }
+        //    if(sort_type.Equals("bubble"))
+        //    {
+        //        Response.StatusCode = 201;
+        //        return Sorts();
+        //    }
+        //}
 
         [HttpPut("sorts/{id:length(24)}")]
         public async Task<IActionResult> Update(string id, AnalysisObjDBModel updatedSorts)
