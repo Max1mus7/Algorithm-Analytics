@@ -2,9 +2,9 @@
 // API Analytics
 // 1/7/2022
 // I used source code from the following websites to complete this assignment: www.geeksforgeeks.com/bubble-sort
-using AlgorithmSite.APISorting.SortInterface;
 using AlgorithmSite.APISorting.RandomNumAPI;
 using AlgorithmSite.APISorting.RandomWordAPI;
+using AlgorithmSite.APISorting.SortInterface;
 
 namespace AlgorithmSite.APISorting.BubbleSort
 {

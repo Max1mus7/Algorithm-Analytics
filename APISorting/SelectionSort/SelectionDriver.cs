@@ -9,7 +9,7 @@ namespace SelectionSort
     {
         public static void Main(string[] args)
         {
-            
+
         }
     }
 }

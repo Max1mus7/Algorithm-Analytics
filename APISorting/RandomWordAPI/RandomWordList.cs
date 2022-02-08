@@ -2,14 +2,14 @@
 // API Analytics
 // 1/7/2022
 // This is my own work.
-using System.Net.Http.Headers;
 using Newtonsoft.Json;
+using System.Net.Http.Headers;
 
 namespace AlgorithmSite.APISorting.RandomWordAPI
 {
     public class RandomWordList
     {
-        public List<string>? Words { get; set;}
+        public List<string>? Words { get; set; }
 
         private async Task SetListAsync()
         {
@@ -23,9 +23,9 @@ namespace AlgorithmSite.APISorting.RandomWordAPI
                 HttpResponseMessage response = await connection.GetAsync("https://random-word-api.herokuapp.com/word?number=30&swear=0");
                 response.EnsureSuccessStatusCode();
                 result = JsonConvert.DeserializeObject<List<string>>(await response.Content.ReadAsStringAsync());
-                if(result != null)
+                if (result != null)
                 {
-                    foreach(string word in result)
+                    foreach (string word in result)
                     {
                         Words.Add(word);
                     }
@@ -35,11 +35,11 @@ namespace AlgorithmSite.APISorting.RandomWordAPI
                     throw new Exception("The API returned a null value");
                 }
             }
-            catch(HttpRequestException e)
+            catch (HttpRequestException e)
             {
                 Console.WriteLine("Error: {0}", e.Message);
             }
-            catch(Exception e)
+            catch (Exception e)
             {
                 Console.WriteLine("Error: {0}", e.Message);
             }
@@ -48,7 +48,7 @@ namespace AlgorithmSite.APISorting.RandomWordAPI
         public async Task<List<string>> GetListAsync()
         {
             await this.SetListAsync();
-            if(Words != null)
+            if (Words != null)
             {
                 return Words;
             }
@@ -61,9 +61,9 @@ namespace AlgorithmSite.APISorting.RandomWordAPI
         public void PrintList(dynamic list)
         {
             int count = 0;
-            foreach(var item in list)
+            foreach (var item in list)
             {
-                if(count % 10 == 0)
+                if (count % 10 == 0)
                 {
                     Console.WriteLine();
                 }

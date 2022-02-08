@@ -51,6 +51,7 @@ D:\Everything\CodingForFun\AlgorithmSite\bin\Debug\net6.0\APISorting\SortInterfa
 D:\Everything\CodingForFun\AlgorithmSite\bin\Debug\net6.0\APISorting\SortInterface\obj\SortInterface.csproj.nuget.dgspec.json
 D:\Everything\CodingForFun\AlgorithmSite\bin\Debug\net6.0\appsettings.Development.json
 D:\Everything\CodingForFun\AlgorithmSite\bin\Debug\net6.0\appsettings.json
+D:\Everything\CodingForFun\AlgorithmSite\bin\Debug\net6.0\Documentation\AlgoAPI.postman_collection.json
 D:\Everything\CodingForFun\AlgorithmSite\bin\Debug\net6.0\AlgorithmSite.staticwebassets.runtime.json
 D:\Everything\CodingForFun\AlgorithmSite\bin\Debug\net6.0\AlgorithmSite.exe
 D:\Everything\CodingForFun\AlgorithmSite\bin\Debug\net6.0\AlgorithmSite.deps.json

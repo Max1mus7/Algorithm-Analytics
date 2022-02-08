@@ -81,28 +81,28 @@ namespace AlgorithmSite.APISorting.Quicksort
         public async Task<List<int>> SortNewNumList(RandomNumList rLister)
         {
             List<int> nums = await rLister.GetListAsync();
-            SortNums(nums, 0, nums.Count-1);
+            SortNums(nums, 0, nums.Count - 1);
             return nums;
         }
         //Sorts a default list of 100 random words and sorts them using a quicksort
         public async Task<List<string>> SortNewWordList(RandomWordList rLister)
         {
             List<string> words = await rLister.GetListAsync();
-            SortWords(words, 0, words.Count-1);
+            SortWords(words, 0, words.Count - 1);
             return words;
         }
 
         public void SortNums(List<int> nums, int start, int end)
         {
-            if(start < end)
+            if (start < end)
             {
                 int pivot = PartitionNums(nums, start, end);
 
-                if(pivot > 1)
+                if (pivot > 1)
                 {
                     SortNums(nums, start, pivot - 1);
                 }
-                if(pivot + 1 < end)
+                if (pivot + 1 < end)
                 {
                     SortNums(nums, pivot + 1, end);
                 }
@@ -112,19 +112,19 @@ namespace AlgorithmSite.APISorting.Quicksort
         public int PartitionNums(List<int> nums, int start, int end)
         {
             int pivot = nums[start];
-            while(true)
+            while (true)
             {
-                while(nums[start] < pivot)
+                while (nums[start] < pivot)
                 {
                     Iterations++;
                     start++;
                 }
-                while(nums[end] > pivot)
+                while (nums[end] > pivot)
                 {
                     Iterations++;
                     end--;
                 }
-                if(start < end)
+                if (start < end)
                 {
                     if (nums[start] == nums[end])
                     {

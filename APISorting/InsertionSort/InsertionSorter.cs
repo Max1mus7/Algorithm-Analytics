@@ -2,9 +2,9 @@
 // API Analytics
 // 1/7/2022
 // I used source code from the following websites to complete this assignment: www.geeksforgeeks.com/insertion-sort
-using AlgorithmSite.APISorting.SortInterface;
 using AlgorithmSite.APISorting.RandomNumAPI;
 using AlgorithmSite.APISorting.RandomWordAPI;
+using AlgorithmSite.APISorting.SortInterface;
 namespace AlgorithmSite.APISorting.InsertionSort
 {
     //This typed class includes methods from the ISorter interface
@@ -34,11 +34,11 @@ namespace AlgorithmSite.APISorting.InsertionSort
             List<int> nums = await rList.GetListAsync();
             //The following sort is from geeksforgeeks.org/insertion-sort
             int n = nums.Count;
-            for (int i = 1; i < n; ++i) 
+            for (int i = 1; i < n; ++i)
             {
                 int key = nums[i];
                 int j = i - 1;
-                while (j >= 0 && nums[j] > key) 
+                while (j >= 0 && nums[j] > key)
                 {
                     //Increases the iterations counter every time the list is iterated through for a sort.
                     Iterations++;
@@ -59,11 +59,11 @@ namespace AlgorithmSite.APISorting.InsertionSort
             List<string> words = await rList.GetListAsync();
             //The following sort is from geeksforgeeks.org/insertion-sort
             int n = words.Count;
-            for (int i = 1; i < n; ++i) 
+            for (int i = 1; i < n; ++i)
             {
                 string key = words[i];
                 int j = i - 1;
-                while (j >= 0 && words[j].CompareTo(key) > 0) 
+                while (j >= 0 && words[j].CompareTo(key) > 0)
                 {
                     //Increases the iterations counter every time the list is iterated through for a sort.
                     Iterations++;

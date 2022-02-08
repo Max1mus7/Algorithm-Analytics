@@ -2,15 +2,28 @@
 // API Analytics
 // 1/7/2022
 // This is my own work.
-using SelectionSort;
-using AlgorithmSite.APISorting.InsertionSort;
 using AlgorithmSite.APISorting.BubbleSort;
-using AlgorithmSite.APISorting.RandomNumAPI;
-using AlgorithmSite.APISorting.RandomWordAPI;
-using Newtonsoft.Json;
-using AlgorithmSite.APISorting.SortInterface;
-using AlgorithmSite.APISorting.Quicksort;
+using AlgorithmSite.APISorting.InsertionSort;
 using AlgorithmSite.APISorting.MergeSort;
+using AlgorithmSite.APISorting.Quicksort;
+using AlgorithmSite.APISorting.RandomNumAPI;
+
+/* Unmerged change from project 'SortAnalytics'
+Before:
+using Newtonsoft.Json;
+After:
+using AlgorithmSite.APISorting.RandomWordAPI;
+*/
+using AlgorithmSite.APISorting.RandomWordAPI;
+using AlgorithmSite.APISorting.SortInterface;
+
+/* Unmerged change from project 'SortAnalytics'
+Before:
+using AlgorithmSite.APISorting.Quicksort;
+After:
+using AlgorithmSite.Json;
+*/
+using SelectionSort;
 
 namespace AlgorithmSite.APISorting.SortAnalytics
 {
@@ -32,12 +45,12 @@ namespace AlgorithmSite.APISorting.SortAnalytics
             RandomNumList rLister = new RandomNumList();
             //declares and instantiates a new list to hold the string representations of each sorted list
             List<List<string>> sortedLists = new List<List<string>>();
-            for(int i = 0; i < attempts; i++)
+            for (int i = 0; i < attempts; i++)
             {
                 //sorts a new list
                 List<int> sortedList = await numSorter.SortNewNumList(rLister);
                 List<string> listItems = new List<string>();
-                foreach(int item in sortedList)
+                foreach (int item in sortedList)
                 {
                     listItems.Add(item + "");
                 }
@@ -48,7 +61,7 @@ namespace AlgorithmSite.APISorting.SortAnalytics
             //declare an int to hold the iteration count from the SelectionSorter
             int iterations = SelectionSorter<int>.Iterations;
             //Declares and instantiates an AnalysisObj object given the information from the sorts
-            AnalysisObj analyzedSorts = new AnalysisObj(new string[] {"Selection Sort", "" + iterations, "" + attempts}, sortedLists);
+            AnalysisObj analyzedSorts = new AnalysisObj(new string[] { "Selection Sort", "" + iterations, "" + attempts }, sortedLists);
             //returns the AnalysisObj object
             return analyzedSorts;
         }
@@ -63,7 +76,7 @@ namespace AlgorithmSite.APISorting.SortAnalytics
             RandomWordList rLister = new RandomWordList();
             //declares and instantiates a new list to hold lists of strings which hold the string representations of each sorted list
             List<List<string>> sortedLists = new List<List<string>>();
-            for(int i = 0; i < attempts; i++)
+            for (int i = 0; i < attempts; i++)
             {
                 //sorts a new list
                 List<string> sortedList = await wordSorter.SortNewWordList(rLister);
@@ -74,7 +87,7 @@ namespace AlgorithmSite.APISorting.SortAnalytics
             //declare an int to hold the iteration count from the SelectionSorter
             int iterations = SelectionSorter<string>.Iterations;
             //Declares and instantiates an AnalysisObj object given the information from the sorts
-            AnalysisObj analyzedSorts = new AnalysisObj(new string[] {"Selection Sort", "" + iterations, "" + attempts}, sortedLists);
+            AnalysisObj analyzedSorts = new AnalysisObj(new string[] { "Selection Sort", "" + iterations, "" + attempts }, sortedLists);
             //returns the AnalysisObj object
             return analyzedSorts;
         }
@@ -89,12 +102,12 @@ namespace AlgorithmSite.APISorting.SortAnalytics
             RandomNumList rLister = new RandomNumList();
             //declares and instantiates a new list to hold the string representations of each sorted list
             List<List<string>> sortedLists = new List<List<string>>();
-            for(int i = 0; i < attempts; i++)
+            for (int i = 0; i < attempts; i++)
             {
                 //declares a list to hold the sorted list of random numbers and instantiates it
                 List<int> sortedList = await numSorter.SortNewNumList(rLister);
                 List<string> listItems = new List<string>();
-                foreach(int item in sortedList)
+                foreach (int item in sortedList)
                 {
                     listItems.Add(item + "");
                 }
@@ -105,7 +118,7 @@ namespace AlgorithmSite.APISorting.SortAnalytics
             //declares an int to hold the Iterations value from the InsertionSorter
             int iterations = InsertionSorter<int>.Iterations;
             //declares and instantiates a new AnalysisObj object given the information from the sort
-            AnalysisObj analyzedSorts = new AnalysisObj(new string[] {"Insertion Sort", "" + iterations, "" + attempts}, sortedLists);
+            AnalysisObj analyzedSorts = new AnalysisObj(new string[] { "Insertion Sort", "" + iterations, "" + attempts }, sortedLists);
             //returns the AnalysisObj
             return analyzedSorts;
         }
@@ -120,7 +133,7 @@ namespace AlgorithmSite.APISorting.SortAnalytics
             RandomWordList rLister = new RandomWordList();
             //declares and instantiates a new list to hold the string representations of each sorted list
             List<List<string>> sortedLists = new List<List<string>>();
-            for(int i = 0; i < attempts; i++)
+            for (int i = 0; i < attempts; i++)
             {
                 //sorts a new list
                 List<string> sortedList = await wordSorter.SortNewWordList(rLister);
@@ -131,7 +144,7 @@ namespace AlgorithmSite.APISorting.SortAnalytics
             //declare an int to hold the iteration count from the SelectionSorter
             int iterations = InsertionSorter<string>.Iterations;
             //Declares and instantiates an AnalysisObj object given the information from the sorts
-            AnalysisObj analyzedSorts = new AnalysisObj(new string[] {"Insertion Sort", "" + iterations, "" + attempts}, sortedLists);
+            AnalysisObj analyzedSorts = new AnalysisObj(new string[] { "Insertion Sort", "" + iterations, "" + attempts }, sortedLists);
             //returns the AnalysisObj object
             return analyzedSorts;
         }
@@ -146,12 +159,12 @@ namespace AlgorithmSite.APISorting.SortAnalytics
             RandomNumList rLister = new RandomNumList();
             //declares and instantiates a new list to hold the string representations of each sorted list
             List<List<string>> sortedLists = new List<List<string>>();
-            for(int i = 0; i < attempts; i++)
+            for (int i = 0; i < attempts; i++)
             {
                 //declares a list to hold the sorted list of random numbers and instantiates it
                 List<int> sortedList = await numSorter.SortNewNumList(rLister);
                 List<string> listItems = new List<string>();
-                foreach(int item in sortedList)
+                foreach (int item in sortedList)
                 {
                     listItems.Add(item + "");
                 }
@@ -162,7 +175,7 @@ namespace AlgorithmSite.APISorting.SortAnalytics
             //declares an int to hold the Iterations value from the InsertionSorter
             int iterations = BubbleSorter<int>.Iterations;
             //declares and instantiates a new AnalysisObj object given the information from the sort
-            AnalysisObj analyzedSorts = new AnalysisObj(new string[] {"Bubble Sort", "" + iterations, "" + attempts}, sortedLists);
+            AnalysisObj analyzedSorts = new AnalysisObj(new string[] { "Bubble Sort", "" + iterations, "" + attempts }, sortedLists);
             //returns the AnalysisObj
             return analyzedSorts;
         }
@@ -177,7 +190,7 @@ namespace AlgorithmSite.APISorting.SortAnalytics
             RandomWordList rLister = new();
             //declares and instantiates a new list to hold the string representations of each sorted list
             List<List<string>> sortedLists = new List<List<string>>();
-            for(int i = 0; i < attempts; i++)
+            for (int i = 0; i < attempts; i++)
             {
                 //sorts a new list
                 List<string> sortedList = await wordSorter.SortNewWordList(rLister);
@@ -188,7 +201,7 @@ namespace AlgorithmSite.APISorting.SortAnalytics
             //declare an int to hold the iteration count from the SelectionSorter
             int iterations = BubbleSorter<string>.Iterations;
             //Declares and instantiates an AnalysisObj object given the information from the sorts
-            AnalysisObj analyzedSorts = new AnalysisObj(new string[] {"Bubble Sort", "" + iterations, "" + attempts}, sortedLists);
+            AnalysisObj analyzedSorts = new AnalysisObj(new string[] { "Bubble Sort", "" + iterations, "" + attempts }, sortedLists);
             //returns the AnalysisObj object
             return analyzedSorts;
         }

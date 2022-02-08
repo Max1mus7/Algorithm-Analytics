@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "UEKy65rYl3OnDtzcr/z7GaSZ37aLxOM7k/ilZ9j4JfU=",
+  "Hash": "22n0X1a+sQxrmrjmm2VNJsMef44muD1y2hGA6IHN3Kg=",
   "Source": "AlgorithmSite",
   "BasePath": "_content/AlgorithmSite",
   "Mode": "Default",
@@ -49,6 +49,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "D:\\Everything\\CodingForFun\\AlgorithmSite\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\AlgorithmSite.bundle.scp.css"
+    },
+    {
+      "Identity": "D:\\Everything\\CodingForFun\\AlgorithmSite\\wwwroot\\css\\custom-style.css",
+      "SourceId": "AlgorithmSite",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Everything\\CodingForFun\\AlgorithmSite\\wwwroot\\",
+      "BasePath": "_content/AlgorithmSite",
+      "RelativePath": "css/custom-style.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\custom-style.css"
     },
     {
       "Identity": "D:\\Everything\\CodingForFun\\AlgorithmSite\\wwwroot\\css\\site.css",

@@ -29,7 +29,7 @@ namespace AlgorithmSite.Models
 
         //a list of sorted data containing string representations of sorted data
         [BsonElement("sorted_data")]
-        public List<List<string>> JsonList { get; set; } = null!;   
+        public List<List<string>> JsonList { get; set; } = null!;
 
         public AnalysisObjDBModel(AnalysisObj obj)
         {

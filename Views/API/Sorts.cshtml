@@ -1,0 +1,42 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Sorting";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<p>Test Page</p>
+<link rel="stylesheet" href="~/css/custom-style.css" />
+<html>
+    <head>
+
+    </head>
+    <body>
+        <section id="centered_section">
+            <form id="input-info" method="POST" action="sorts">
+                <input type="radio" id="bubble_selector" name="sort_type" value="bubble" />
+                <label for="bubble_selector">Bubble</label>
+
+                <input type="radio" id="selection_selector" name="sort_type" value="selection" />
+                <label for="selection_selector">Selection</label>
+
+                <input type="radio" id="insertion_selector" name="sort_type" value="insertion" />
+                <label for="insertion_selector">Insertion</label>
+
+                <input type="radio" id="merge_selector" name="sort_type" value="merge" />
+                <label for="merge_selector">Merge</label>
+
+                <input type="radio" id="quicksort_selector" name="sort_type" value="quicksort" />
+                <label for="quicksort_selector">Quicksort</label>
+                <br />
+                
+                <textarea id="inputBox" cols=75 rows=15></textarea>
+                <br />
+                <input type="submit" id="submission" name="submit" value="Submit" />
+
+            </form>
+        </section>
+    </body>
+</html>

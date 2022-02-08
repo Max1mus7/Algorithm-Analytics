@@ -4,6 +4,6 @@ namespace AlgorithmSite.Business
 {
     public class SortAnalyzer : SortAnalysis
     {
-        
+
     }
 }
