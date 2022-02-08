@@ -14,5 +14,6 @@ namespace AlgorithmSite.APISorting.SortInterface
         //Sorts a list of random numbers obtained from an API based on the sorting class
         public Task<List<int>> SortNewNumList(RandomNumList rLister);
         public Task<List<string>> SortNewWordList(RandomWordList rLister);
+
     }
 }
